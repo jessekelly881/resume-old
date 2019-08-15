@@ -1,6 +1,6 @@
 build: resume.tex
-	pdflatex resume.tex
+	pdflatex resume.tex & pdflatex cover.tex
 
 
 dev: resume.tex
-	echo "resume.tex" | entr pdflatex resume.tex
+	ls *tex | entr pdflatex resume.tex
