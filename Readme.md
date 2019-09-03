@@ -3,7 +3,11 @@
 
 Latex template is free to change, use, and share. But the text is mine.
 
-![Resume](pic.jpg?raw=true "Resume Screenshot")
+*Resume*
+![Resume](resume.jpg?raw=true "Resume Screenshot")
+
+*Cover Letter*
+![Cover Letter](cover.jpg?raw=true "Resume Screenshot")
 
 
 ## How to use
