@@ -1,4 +1,5 @@
 # My Resume and Coverletter
+[![made-with-react](https://img.shields.io/badge/Made%20with-Latex-8b0000.svg)]
 > A resume and cover letter built using LaTeX
 
 Latex template is free to change, use, and share. But the text is mine.
