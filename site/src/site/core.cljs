@@ -39,11 +39,6 @@
     [page-title "Hire Me!!"]
    ])
 
-(defn footer []
-  [:section (use-style {:margin-top "20px" :text-align "center"})
-   [:small "Built using Clojurescript!"]]
-  )
-
 (defn app []
   [:div
    [:title "Jesse Kelly"]
@@ -100,8 +95,6 @@
    ]
 
    [hire-me-page]
-   [footer]
-
    ]
   )
 

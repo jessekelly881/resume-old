@@ -4,6 +4,7 @@
 
 html {
     font-size: 100%;
+    background-color: #eee;
 } /*16px*/
 
 body {
@@ -12,7 +13,7 @@ body {
     font-weight: 400;
     line-height: 1.65;
     color: #0c2c40;
-    margin: 3% 5%;
+    margin: 5% 15%;
 }
 
 p {
@@ -48,16 +49,27 @@ h5 {
     line-height: 1.15;
 }
 
-.page,
-.topPage,
-.hireMePage {
+.page {
     padding-left: 2rem;
     padding-bottom: 1.5rem;
 }
 
 .siteTitle,
-.pageTitle {
+.pageTitle,
+.pageSubTitle,
+p {
+    padding-left: 2rem;
+}
+
+.siteTitle,
+.pageTitle,
+.pageSubTitle {
+    padding-bottom: 1.5rem;
     padding-top: 2rem;
+}
+
+.siteTitle {
+    padding-top: 3rem;
 }
 
 h1 {
