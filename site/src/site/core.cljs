@@ -3,6 +3,8 @@
             [reagent.dom :as dom]
             [stylefy.core :as stylefy :refer [use-style]]))
 
+(def resume-link "https://github.com/jessekelly881/Resume/blob/master/pdf/resume.pdf")
+
 (stylefy/init)
 
 (defn page-divider []
@@ -33,9 +35,7 @@
 
 (defn hire-me-page []
   [:section (use-style {:background-color "#F2AA8085" :height "45vh"})
-   [page
-    [page-title "Hire Me!"]
-    ]
+    [page-title "Hire Me!!"]
    ])
 
 (defn footer []
@@ -48,7 +48,8 @@
    [:title "Jesse Kelly"]
    [top-page]
    [page
-       [page-title "Profile"]
+    [page-title "Profile"]
+    [:a {:href resume-link :target '_blank'} "My Resume"]
    ]
 
    [page-divider]

@@ -20,6 +20,10 @@ p {
     color: #444;
 }
 
+a {
+    color: #0c2c40;
+}
+
 .topPage {
     height: 55vh;
     background-repeat: no-repeat;
