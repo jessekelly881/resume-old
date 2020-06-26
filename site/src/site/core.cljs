@@ -3,19 +3,16 @@
             [reagent.dom :as dom]
             [stylefy.core :as stylefy :refer [use-style]]))
 
-(def top-page-style {:height "55vh"
-                     :background-repeat "no-repeat"
-                     :background-position "center bottom"
-                     :background-color "#F2AA8085"
-                     :background-image "url('http://seanhalpin.io/assets/img/content/home/masthead/land.svg')"})
-
 (stylefy/init)
+
+(defn page-divider []
+  [:div.pageDivider])
 
 (defn site-title [text]
   [:h1.siteTitle text])
 
 (defn page [& children]
-  [:section children])
+  [:section.page children])
 
 (defn site-footer []
   [:footer.siteFooter
@@ -29,8 +26,9 @@
   [:h3.pageSubTitle text])
 
 (defn top-page []
-  [:section (use-style top-page-style)
+  [:section.topPage
      [site-title "Jesse Kelly"]
+     [page-sub-title "Your problem solver"]
   ])
 
 (defn hire-me-page []
@@ -53,13 +51,19 @@
        [page-title "Profile"]
    ]
 
+   [page-divider]
+
    [page
        [page-title "Education"]
    ]
 
+   [page-divider]
+
    [page
        [page-title "Experience"]
    ]
+
+   [page-divider]
 
    [page
        [page-title "Abilities"]
@@ -67,6 +71,8 @@
        [page-sub-title "Languages"]
        [page-sub-title "Tools"]
    ]
+
+   [page-divider]
 
    [page
        [page-title "Projects"]
