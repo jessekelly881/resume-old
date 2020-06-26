@@ -4,6 +4,7 @@
             [stylefy.core :as stylefy :refer [use-style]]))
 
 (def resume-link "https://github.com/jessekelly881/Resume/blob/master/pdf/resume.pdf")
+(def github-link "https://github.com/jessekelly881")
 
 (stylefy/init)
 
@@ -30,11 +31,11 @@
 (defn top-page []
   [:section.topPage
      [site-title "Jesse Kelly"]
-     [page-sub-title "Your problem solver"]
+     [page-sub-title "I build things"]
   ])
 
 (defn hire-me-page []
-  [:section (use-style {:background-color "#F2AA8085" :height "45vh"})
+  [:section.hireMePage (use-style {:background-color "#F2AA8085" :height "45vh"})
     [page-title "Hire Me!!"]
    ])
 
@@ -49,7 +50,26 @@
    [top-page]
    [page
     [page-title "Profile"]
-    [:a {:href resume-link :target '_blank'} "My Resume"]
+    [:div.aboutMe
+        [page-sub-title "About me"]
+        [:p "I am a software engineer and creative. I love to make you dreams a readlity. Learn more about me! Check out "
+            [:a {:href resume-link :target '_blank'} "My Resume"]
+            " or "
+            [:a {:href github-link :target '_blank'} "My Github Account"]
+        ]
+        [:p "I also love to travel and play the guitar! I am from the US origionally but live in Mexico City and am always planning backpacking trips."]
+    ]
+
+    [:div.supportMe
+        [page-sub-title "Support my work!"]
+     [:p "Got inspired? Copied the theme? Or do you just like the website? No problem, just buy me a beer!"
+      [:br]
+      "Bitcoin: "
+      [:strong
+       "bc1q60twsepwkjpf8w7myaupkr2fxkuc0cze0wxygh"
+       ]
+      ]
+    ]
    ]
 
    [page-divider]
